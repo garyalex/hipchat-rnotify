@@ -13,7 +13,7 @@ if (( $# > 0 )); then
         shift
         MESSAGE="$MESSAGE $1"
     done
-    /usr/local/hc/hipchat.pl -room "Support" -token $TOKEN -from "garyalex" -message "$MESSAGE"
+    /usr/local/hc/hipchat.pl -room "Support" -token $TOKEN -from "garyalex" -message "$MESSAGE" -colour "random"
 else
     echo "No message!"
     exit 1
